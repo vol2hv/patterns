@@ -6,7 +6,11 @@ public class Context {
     public Context(Strategy strategy) {
         this.strategy = strategy;
     }
+    public void setSrategy(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
     public void execute(){
         strategy.execute();
     }
-}
+    }

@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 class ContextTest {
     @Test
     public void test(){
-        new Context(new ConcreteStrategyA()).execute();
-        new Context(new ConcreteStrategyB()).execute();
+        Context context = new Context(new ConcreteStrategyA());
+        context.execute();
+        context.setSrategy(new ConcreteStrategyB());
+        context.execute();
     }
 }
